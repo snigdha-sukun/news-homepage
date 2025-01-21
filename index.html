@@ -7,65 +7,99 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
 
   <title>Frontend Mentor | News homepage</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
+  <header>
+    <img src="./assets/images/logo.svg" alt="logo" />
+    <div class="mobile_menu" id="menu_hamburger" aria-label="Menu">
+      <img src="./assets//images/icon-menu.svg" alt="menu" />
+    </div>
+    <nav id="nav_menu">
+      <div class="close_menu" id="close_menu" aria-label="Close Menu">
+        <img src="./assets/images/icon-menu-close.svg" alt="close" />
+      </div>
+      <ul>
+        <li>Home</li>
+        <li>New</li>
+        <li>Popular</li>
+        <li>Trending</li>
+        <li>Categories</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <header class="banner"></header>
 
-  Home
-  New
-  Popular
-  Trending
-  Categories
+    <h1>The Bright Future of Web 3.0?</h1>
 
-  The Bright Future of Web 3.0?
+    <div class="selected-news">
+      <p>
+        We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of
+        the
+        people. But is it really fulfilling its promise?
+      </p>
 
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the
-  people.
-  But is it really fulfilling its promise?
+      <button type="button">READ MORE</button>
+    </div>
 
-  Read more
+    <section aria-labelledby="new-updates" class="new-updates-section">
 
-  New
+      <h2 id="new-updates">New</h2>
 
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
+      <div class="new-update">
+        <h3>Hydrogen VS Electric Cars</h3>
+        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+      </div>
 
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
+      <hr />
 
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
+      <div class="new-update">
+        <h3>The Downsides of AI Artistry</h3>
+        <p>What are the possible adverse effects of on-demand AI image generation?</p>
+      </div>
 
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
+      <hr />
 
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
+      <div class="new-update">
+        <h3>Is VC Funding Drying Up?</h3>
+        <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      </div>
+    </section>
 
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
+    <section class="feature-news-section">
+      <div class="feature">
+        <img src="./assets/images/image-retro-pcs.jpg" alt="Retro PC" height="100" />
+        <div class="feature-news">
+          <h2>01</h2>
+          <h3>Reviving Retro PCs</h3>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <div class="feature">
+        <img src="./assets/images/image-top-laptops.jpg" alt="Top Laptops" height="100" />
+        <div class="feature-news">
+          <h2>02</h2>
+          <h3>Top 10 Laptops of 2022</h3>
+          <p>Our best picks for various needs and budgets.</p>
+        </div>
+      </div>
+
+      <div class="feature">
+        <img src="./assets/images/image-gaming-growth.jpg" alt="Gaming Growth" height="100" />
+        <div class="feature-news">
+          <h2>03</h2>
+          <h3>The Growth of Gaming</h3>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>
