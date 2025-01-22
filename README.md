@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.mp4)
+![](./screenshot.gif)
 
 ### Links
 
