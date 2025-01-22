@@ -131,6 +131,12 @@ closeMenu.addEventListener("click", () => {
 });
 ```
 
+I also learned how to debug a div if its not showing up:
+
+```css
+border: 2px solid red;
+```
+
 ### Continued development
 
 I still need to practice the positioning an element & `@media`. I need to practice using JS for making the UI to react to different events. I also need to learn about responsive CSS, HTML5 rules & JS best practices. I need to learn more about `aria-*` tags for accessibilty.
